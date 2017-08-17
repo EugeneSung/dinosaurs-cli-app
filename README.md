@@ -1,1 +1,1 @@
-# name-cli-app
+# dinosaurs-cli-app
