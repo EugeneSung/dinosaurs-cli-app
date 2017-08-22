@@ -1,0 +1,26 @@
+
+[1mFrom:[0m /home/yujunsung-28811/code/labs/dinosaurs-cli-app/lib/commandlineinterface.rb @ line 93 CommandLineInteface#display_one:
+
+     [1;34m87[0m: [32mdef[0m [1;34mdisplay_one[0m
+     [1;34m88[0m:   puts [31m[1;31m"[0m[31mPlease choose a name of dinosaurs:[1;31m"[0m[31m[0m
+     [1;34m89[0m:   input = gets.strip
+     [1;34m90[0m: 
+     [1;34m91[0m:   dinosaur = [1;34;4mDinosaurs[0m.all.detect{|dino| dino.name.downcase == input.downcase}
+     [1;34m92[0m:   add_attributes_to_dinosaur(dinosaur)
+ =>  [1;34m93[0m:   binding.pry
+     [1;34m94[0m:   puts [31m[1;31m"[0m[31m----------------------------------------------------------------------------[1;31m"[0m[31m[0m.colorize([33m:green[0m)
+     [1;34m95[0m:   puts [31m[1;31m"[0m[31m============================================================================[1;31m"[0m[31m[0m.colorize([33m:yellow[0m)
+     [1;34m96[0m: 
+     [1;34m97[0m:       puts [31m[1;31m"[0m[31m#{dinosaur.name.upcase}[0m[31m[1;31m"[0m[31m[0m.colorize([33m:red[0m)
+     [1;34m98[0m:       puts [31m[1;31m"[0m[31mdescription: [1;31m"[0m[31m[0m.colorize([33m:light_blue[0m) + [31m[1;31m"[0m[31m#{dinosaur.description}[0m[31m[1;31m"[0m[31m[0m
+     [1;34m99[0m:       puts [31m[1;31m"[0m[31mURL:[1;31m"[0m[31m[0m.colorize([33m:light_blue[0m) + [31m[1;31m"[0m[31m#{dinosaur.url}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m100[0m:       puts [31m[1;31m"[0m[31mWikipedia Description:[1;31m"[0m[31m[0m.colorize([33m:light_blue[0m) + [31m[1;31m"[0m[31m#{dinosaur.wiki_description}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m101[0m:       puts [31m[1;31m"[0m[31m============================================================================[1;31m"[0m[31m[0m.colorize([33m:yellow[0m)
+    [1;34m102[0m: 
+    [1;34m103[0m:       puts [31m[1;31m"[0m[31m----------------------------------------------------------------------------[1;31m"[0m[31m[0m.colorize([33m:green[0m)
+    [1;34m104[0m: 
+    [1;34m105[0m: 
+    [1;34m106[0m: 
+    [1;34m107[0m: 
+    [1;34m108[0m: [32mend[0m
+

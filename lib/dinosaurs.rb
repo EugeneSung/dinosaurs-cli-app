@@ -1,6 +1,6 @@
 class Dinosaurs
 
-  attr_accessor :name, :description, :profile_quote, :bio, :profile_url
+  attr_accessor :name, :description, :phylum,:clade, :kingdom, :url, :wiki_description
 
   @@all = []
 
@@ -16,9 +16,18 @@ class Dinosaurs
      Dinosaurs.new(dinosaurs)
    end
  end
+ def add_dinosaur_attributes(attributes_hash)
+
+   unless attributes_hash == nil
+     attributes_hash.each do |key, value|
+       self.send("#{key}=", value)
+     end
+   end
+ end
 
  def self.all
    @@all
  end
+
 
 end
